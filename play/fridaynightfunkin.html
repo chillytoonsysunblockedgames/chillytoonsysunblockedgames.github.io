@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+        <head>
+              <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clever | Portal</title>
       <link rel="icon" type="image/x-icon" href="https://i.ibb.co/5h70VCLf/cleverfavicon.png">
-    <style>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,800;1,800&display=swap');
+</style>
+    </head>
+<style>
         body {
-            font-family: "Work Sans", sans-serif;
+            font-family: "Work Sans";
             margin: 20px;
             background-color: #f0f0f0;
             color: #333;
@@ -16,36 +19,86 @@
             background-size: cover;
             height: 100vh;
         }
-        image { 
-  border-radius: 6%;
-}
-        header {
+            header {
             text-align: center;
             padding: 20px;
-            background-color: #949494;
+            background-color: #404040;
             color: white;
             border-radius: 8px;
             margin-bottom: 20px;
         }
-        .game-container {
+            .c-button {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 8px;
+  background: #666666;
+  color: #fff;
+  padding: 2px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+
+            .c-button2 {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 8px;
+  background: #666666;
+  color: #fff;
+  padding: 7px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+
+        .topbaring {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 14px;
             justify-content: center;
+              margin-top: -8px;
+                justify-content: center;
         }
-            
-        .topbar {
+                .tools {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+                gap: 11px;
+            justify-content: center;
+              margin-top: -8px;
+                            margin-bottom: 8px;
+                justify-content: center;
+        }
+                .toplogo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 11px;
+            justify-content: left;
+        }
+           .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0px;
             justify-content: center;
         }
         .game-card {
-            background-color: white;
-            border: 1px solid #ddd;
+            background-color: gray;
+            border: 6px solid #404040;
             border-radius: 8px;
+            color: white;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 9px;
+            padding: 0px;
             width: 1200px;
             text-align: center;
         }
@@ -57,116 +110,154 @@
             width: 100%;
             height: 678px; /* Adjust as needed */
             border: none;
-            border-radius: 4px;
+            border-radius: 2px;
         }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 10px;
-            background-color: #eee;
-            border-radius: 8px;
-            color: #555;
-        }
-        .c-button {
-  font-family: "Work Sans";
-  appearance: none;
-  border: 0;
-border-color: #fff;
-  border-radius: 8px;
-  background: #666666;
-  color: #fff;
-  padding: 0px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  align-items: center;
-  margin-top: 10px;
-  text-align: center;
-  text-decoration: none;
-  transition: transform .2s;
-}
-
-        .c-button2 {
-  font-family: "Work Sans";
-  appearance: none;
-  border: 0;
-border-color: #fff;
-  border-radius: 8px;
-  background: #666666;
-  color: #fff;
-  padding: 9px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  align-items: center;
-  margin-top: 10px;
-  text-align: center;
-  text-decoration: none;
-  transition: transform .2s;
-  
-}
-
-
 .c-button:hover {
+    background-color: white;
+    color: black;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
 }
-
-.c-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #cbd6ee;
-}
-img {
-  border-radius: 15%;
- transition: transform .2s; /* Animation */
+.c-button2:hover {
+    background-color: white;
+    color: black;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .zoom {
-  padding: 1px;
+  padding: px;
   background-color: ;
   transition: transform .2s;
 }
-
-
 .zoom:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.07);  
+}
+.gameicon {
+  padding: 6px;
+  background-color: ;
+  color: white;
+  transition: transform .2s;
+  border-radius: 25px;
+  justify-content: center;
+
+}
+.gameicon:hover {
+    background-color: black;
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
   transform: scale(1.1);  
 }
+.overlay {
+ position: absolute;
+  opacity: 0;
+      top: 0;
+  bottom: 1;
+  left: 0;
+  right: 0;
+  
 
-body::-webkit-scrollbar {
-    display: none;
+}
+
+.image {
+    opacity: 1;
 }
 
 
-    </style>
-</head>
-<body>
-    
-    <header>
-        <a><img src="https://chillytoonsysunblockedgames.github.io/images/updated%20ctug%20logo.png" alt="ctmg-online-ad-1" border="0" height="100"></a>
-     <h1></h1>
+.gameicon:hover .overlay {
+  opacity: 1;
+        top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
-              <a href="https://chillytoonsysunblockedgames.github.io/" class="c-button">Home</a>
-             <a class="c-button" onclick="alert('WIP')">Discord</a>
+}
+
+.gameicon:hover .image {
+  opacity: .5;
+}
+
+
+.text {
+      opacity: 1;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+  user-select: none;  
+}
+
+.texttop {
+  color: white;
+  text-align: center;
+    font-size: 50px;
+        margin-top: 4px;
+                margin-bottom: 10px;
+}
+
+
+
+body::-webkit-scrollbar {
+        display: none;
+}
+</style>
+
+<body>
+    <header>
+
+            <div class="topbaring">
+        <a href="https://chillytoonsysunblockedgames.github.io" class="c-button">Home</a>
+        <a href="https://chillytoonsysunblockedgames.github.io/allgames.html" class="c-button">All Games</a>
+        <a href="https://chillytoonsysunblockedgames.github.io" class="c-button">NBCF Report</a>
+                <a href="https://discord.gg/hBKMpe93wF" class="c-button">Discord</a>
+
 
     </header>
-    
 
-    <div class="game-container">
-        <div class="game-card">
-            <h1>Friday Night Funkin</h1>
-            <iframe src="https://chillytoonsysunblockedgames.github.io/storage/Funkin%20(downloaded%20from%20CTUG).html" allowfullscreen></iframe>
-            <p></h>
-            <a href="https://github.com/toonsy88/ctug_delivery/releases/download/xd/Funkin.downloaded.from.CTUG.html" class="c-button2">Download Offline</a>
-        </div>
- <a href="https://www.roblox.com/games/17662419772/chillytoonsy-Minigames"><img src="https://chillytoonsysunblockedgames.github.io/icons/1v1lolctug.png" class="zoom" width="150" height="150"></a>
-        <a href="https://chillytoonsysunblockedgames.github.io/play/drift-boss.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/driftboss.png" class="zoom" width="150" height="150"></a>
-        <a href="https://www.roblox.com/games/17662419772/chillytoonsy-Minigames"><img src="https://chillytoonsysunblockedgames.github.io/icons/eaglercraft.png" class="zoom" width="150" height="150"></a>
-        <a href="https://www.roblox.com/games/17662419772/chillytoonsy-Minigames"><img src="https://chillytoonsysunblockedgames.github.io/icons/bloons.png" class="zoom" width="150" height="150"></a>
-        <a href="https://www.roblox.com/games/17662419772/chillytoonsy-Minigames"><img src="https://chillytoonsysunblockedgames.github.io/icons/basketrandom.png" class="zoom" width="150" height="150"></a>
-        <a href="https://www.roblox.com/games/17662419772/chillytoonsy-Minigames"><img src="https://chillytoonsysunblockedgames.github.io/icons/ducklife.png" class="zoom" width="150" height="150"></a>
-      <a href="https://www.roblox.com/games/17662419772/chillytoonsy-Minigames"><img src="https://chillytoonsysunblockedgames.github.io/icons/volleyrandom.png" class="zoom" width="150" height="150"></a>
-    </div>
-      
-    <footer>
-        <p>Still a WIP, it is takin' time.</p>
-    </footer>
+ <div class="game-container">
+     <div class="game-card">
+          <iframe id="myIframe" src="https://chillytoonsysunblockedgames.github.io/storage/friday-night-funkin.html" allowfullscreen></iframe>
+                      <div class="tools">
+                                      <a id="fullscreenButton" class="c-button2">Play Fullscreen</a>
+                                <a href="https://github.com/toonsy88/ctug_delivery/releases/download/xd/Funkin.downloaded.from.CTUG.html" class="c-button2">Download Offline</a>
+        <script>
+    const myIframe = document.getElementById('myIframe');
+    const fullscreenButton = document.getElementById('fullscreenButton');
+
+    fullscreenButton.addEventListener('click', () => {
+        if (document.fullscreenElement) {
+            // If already in fullscreen, exit fullscreen
+            document.exitFullscreen();
+        } else {
+            // If not in fullscreen, request fullscreen for the iframe
+            if (myIframe.requestFullscreen) {
+                myIframe.requestFullscreen();
+            } else if (myIframe.mozRequestFullScreen) { /* Firefox */
+                myIframe.mozRequestFullScreen();
+            } else if (myIframe.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                myIframe.webkitRequestFullscreen();
+            } else if (myIframe.msRequestFullscreen) { /* IE/Edge */
+                myIframe.msRequestFullscreen();
+            }
+        }
+    });
+    </script>
+            </div>
+            </div>
+                  
+                        
+
 </body>
 </html>
+ 
+        

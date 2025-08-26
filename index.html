@@ -36,7 +36,7 @@ border-color: #fff;
   background: #666666;
   color: #fff;
   padding: 2px 20px;
-  font-size: 20px;
+  font-size: 30px;
   cursor: pointer;
   align-items: center;
   margin-top: 10px;
@@ -53,7 +53,7 @@ border-color: #fff;
            .game-container {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 5px;
             justify-content: center;
         }
 .c-button:hover {
@@ -74,18 +74,30 @@ border-color: #fff;
   transform: scale(1.1);  
 }
 .gameicon {
-  padding: 6px;
+  padding: 8px;
   background-color: ;
   color: white;
   transition: transform .2s;
-  border-radius: 25px;
+  border-radius: 28px;
   justify-content: center;
 
 }
-
+.gameicon:hover {
+      background-color: white;
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.1);  
+}
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.centertext {
+    text-align: center;
+    color: white;
+    margin-top: 14px;
+    margin-bottom: 14px;
 }
 </style>
 
@@ -93,6 +105,7 @@ body::-webkit-scrollbar {
     <header>
         <a><img src="https://chillytoonsysunblockedgames.github.io/images/updated%20ctug%20logo.png" alt="ctmg-online-ad-1" border="0" height="200"></a>
         <h1>chillytoonsy's unblocked games</h1>
+                    <p>Version 1.0.0</p>
             <p id="dynamic-text"></p>
             <div class="topbaring">
         <a href="https://chillytoonsysunblockedgames.github.io" class="c-button">Home</a>
@@ -120,26 +133,29 @@ body::-webkit-scrollbar {
 
 
     </header>
-
+                <h1 class="centertext">Featured Games</h1>
             <div class="game-container">
-                <div class="zoom">
+                                <div class="gameicon">
                     <a href="https://chillytoonsysunblockedgames.github.io/play/eaglercraft.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/eaglercraft.png" width="125" height="125">
                   </div>
-                       <div class="zoom">
+                       <div class="gameicon">
                     <a href="https://chillytoonsysunblockedgames.github.io/play/fridaynightfunkin.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/fnf.png" width="125" height="125">
                   </div>
-                                         <div class="zoom">
+                       <div class="gameicon">
                     <a href="https://chillytoonsysunblockedgames.github.io/play/drift-boss.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/driftboss.png" width="125" height="125">
                   </div>
-                                                           <div class="zoom">
+                       <div class="gameicon">
                     <a href="https://chillytoonsysunblockedgames.github.io/play/baldis-basics.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/baldisbasics.png" width="125" height="125">
                   </div>
-
-
-                  
-                        
-
+                       <div class="gameicon">
+                    <a href="https://chillytoonsysunblockedgames.github.io/play/basketrandom.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/basketrandom.png" width="125" height="125">
+                  </div>
+                       <div class="gameicon">
+                    <a href="https://chillytoonsysunblockedgames.github.io/comingsoon.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/bloons.png" width="125" height="125">
+                    </div>
+            </div>
 </body>
 </html>
+
  
         

@@ -14,7 +14,7 @@
             margin: 20px;
             background-color: #f0f0f0;
             color: #333;
-            background-image: url('https://chillytoonsysunblockedgames.github.io/images/ctugbg.gif');
+            background-image: url('images/ctugbg.gif');
             background-position: center center;
             background-size: cover;
             height: 100vh;
@@ -99,19 +99,32 @@ body::-webkit-scrollbar {
     margin-top: 14px;
     margin-bottom: 14px;
 }
+
+.slightlybigger {
+    text-align: center;
+    color: #27C2F5;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.lessblue {
+    color: #27C2F5;
+}
+
 </style>
 
 <body>
     <header>
-        <a><img src="https://chillytoonsysunblockedgames.github.io/images/updated%20ctug%20logo.png" alt="ctmg-online-ad-1" border="0" height="200"></a>
+        <a><img src="images/ctug_logo.png" border="0" height="200"></a>
         <h1>chillytoonsy's unblocked games</h1>
-                    <p>Version 1.0.0</p>
-            <p id="dynamic-text"></p>
+                    <p id="dynamic-text"></p>
+                    <p class="slightlybigger">Version 1.0.0</p>
             <div class="topbaring">
-        <a href="https://chillytoonsysunblockedgames.github.io" class="c-button">Home</a>
-        <a href="https://chillytoonsysunblockedgames.github.io/allgames.html" class="c-button">All Games</a>
-        <a href="https://chillytoonsysunblockedgames.github.io" class="c-button">NBCF Report</a>
-                <a href="https://discord.gg/hBKMpe93wF" class="c-button">Discord</a>
+        <a href="index.html" class="c-button">Home</a>
+        <a href="allgames.html" class="c-button">All Games</a>
+        <a href="ncbf.html" class="c-button">NCBF Report</a>
+                <a onclick="alert('You are entering a link that may be blocked, Press OK to proceed.')" href="https://discord.gg/hBKMpe93wF" class="c-button">Discord</a>
         
         
 
@@ -122,7 +135,6 @@ body::-webkit-scrollbar {
                 "Free Unblocked Games for Everyone!",
                 "Join our Discord!",
                 "We have a wide range of Unblocked Games! Hope you enjoy.",
-                "Some games may run better in the downloaded offline file, you can try it out and see for yourself!"
             ];
 
             const randomIndex = Math.floor(Math.random() * changingTexts.length);
@@ -136,25 +148,25 @@ body::-webkit-scrollbar {
                 <h1 class="centertext">Featured Games</h1>
             <div class="game-container">
                                 <div class="gameicon">
-                    <a href="https://chillytoonsysunblockedgames.github.io/play/eaglercraft.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/eaglercraft.png" width="125" height="125">
+                    <a href="play/eaglercraft-play.html"><img src="icons/eaglercraft.png" width="125" height="125">
                   </div>
                        <div class="gameicon">
-                    <a href="https://chillytoonsysunblockedgames.github.io/play/fridaynightfunkin.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/fnf.png" width="125" height="125">
+                    <a href="play/fridaynightfunkin-play.html"><img src="icons/fnf.png" width="125" height="125">
                   </div>
                        <div class="gameicon">
-                    <a href="https://chillytoonsysunblockedgames.github.io/play/drift-boss.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/driftboss.png" width="125" height="125">
+                    <a href="play/driftboss-play.html"><img src="icons/driftboss.png" width="125" height="125">
                   </div>
                        <div class="gameicon">
-                    <a href="https://chillytoonsysunblockedgames.github.io/play/baldis-basics.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/baldisbasics.png" width="125" height="125">
+                    <a href="play/baldisbasics-play.html"><img src="icons/baldisbasics.png" width="125" height="125">
                   </div>
                        <div class="gameicon">
-                    <a href="https://chillytoonsysunblockedgames.github.io/play/basketrandom.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/basketrandom.png" width="125" height="125">
+                    <a href="play/basketrandom-play.html"><img src="icons/basketrandom.png" width="125" height="125">
                   </div>
                        <div class="gameicon">
-                    <a href="https://chillytoonsysunblockedgames.github.io/comingsoon.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/bloons.png" width="125" height="125">
+                    <a href="comingsoon.html"><img src="icons/bloons.png" width="125" height="125">
                     </div>
                             <div class="gameicon">
-                    <a onclick="alert('Slope is only available for downloads right now, we are working to make it playable on CTUG. You will now be downloading Slope.')" href="https://github.com/toonsy88/ctug_delivery/releases/download/xd/Slope.downloaded.from.CTUG.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/slope.png" width="125" height="125">
+                    <a href="play/slope-play.html"><img src="icons/slope.png" width="125" height="125">
                     </div>
             </div>
 </body>

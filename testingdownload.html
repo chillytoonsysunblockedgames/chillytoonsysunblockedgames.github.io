@@ -1,0 +1,12 @@
+<script>
+    
+document.addEventListener('DOMContentLoaded', (event) => {
+    const a = document.createElement('a');
+    a.href = 'index.html'; // Replace with your file's URL
+    a.download = 'index.html';
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+});
+</script>

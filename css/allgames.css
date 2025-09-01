@@ -1,4 +1,4 @@
-        body {
+            body {
             font-family: "Work Sans";
             margin: 20px;
             background-color: #f0f0f0;
@@ -14,7 +14,7 @@
             right: 20%;
             text-align: center;
             padding: 20px;
-            background-color: #404040;
+            background-color: grey;
             color: white;
             padding-bottom: 13px;
             border-radius: 8px;
@@ -31,16 +31,12 @@
                 justify-content: center;
         }
            .game-container {
-            position: absolute;
-	        top: 15%;
-	        right: 6%;
-	        left: 6%;
+
             border-radius: 20px;
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-top: px;
-            background-color: grey;
             justify-content: center;
         }
         .game-card {
@@ -77,8 +73,8 @@
   background-color: ;
   color: white;
   transition: transform .2s;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   border-radius: 25px;
   justify-content: center;
 
@@ -91,7 +87,6 @@
 }
 
 
-
 .gameicon:hover .overlay {
   opacity: 1;
         top: 0;
@@ -101,12 +96,63 @@
 
 }
 
+.gameicon:hover .gamename {
+    color: black;
+}
+
+
 .gameicon:hover .image {
   opacity: .5;
 }
 
+            .c-button2 {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 8px;
+  background: #666666;
+  color: #fff;
+  padding: 7px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
 
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+.c-button2:hover {
+    background-color: white;
+    color: black;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+            .c-button2selected {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 8px;
+  background: #9C9C9C;
+  color: #fff;
+  padding: 7px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
 
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+.c-button2selected:hover {
+    background-color: #9C9C9C;
+
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
             .c-button {
   font-family: "Work Sans";
   appearance: none;
@@ -124,14 +170,61 @@
   text-decoration: none;
   transition: transform .2s;
 }
+            .newheader {
+            text-align: center;
+            padding: 6px;
+            background-color: #404040;
+            color: white;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+            .bottomheader {
+            text-align: center;
+            padding: -2px;
+            background-color: grey;
+            color: white;
+            padding-top: -3px;
+            padding-bottom: -3px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+                    .gameiconwithtext {
+            text-align: center;
+            background-color: grey;
+            color: white;
+            padding-top: -3px;
+            padding-bottom: -3px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+  transition: transform .2s;
+        }
+        .gameiconwithtext:hover {
+        padding: 5px;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+                    .topheader {
+            text-align: center;
+            padding: 20px;
+            background-color: grey;
+            color: white;
+            padding-bottom: 13px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
 
 body::-webkit-scrollbar {
         display: none;
 }
   .frontpage {
       	position: absolute;
-      		top: 50%;
+      	top: 130px;
 	left: 50%;
+	right: -30%;
+	height: 1vh;
             flex-wrap: wrap;
             gap: 10px;
             text-align: center;
@@ -147,4 +240,52 @@ body::-webkit-scrollbar {
 
 .usborder {
       border-radius: 20px;
+}
+.game-tab {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 35px;
+    color: white;
+}
+
+.gamename {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3px;
+}
+
+
+.imagehover {
+    border-radius: px;
+}
+            .c-button3 {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 8px;
+  background: #666666;
+  color: #fff;
+  padding: 7px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+.hovertool {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.c-button3:hover {
+    background-color: white;
+    color: black;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
 }

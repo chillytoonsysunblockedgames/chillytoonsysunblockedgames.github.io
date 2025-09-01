@@ -14,7 +14,7 @@
             margin: 20px;
             background-color: #f0f0f0;
             color: white;
-            background-image: url('https://chillytoonsysunblockedgames.github.io/images/ctugbg.gif');
+            background-image: url('../images/ctugbg.gif');
             background-position: center center;
             background-size: cover;
             height: 90vh;
@@ -43,6 +43,7 @@ border-color: #fff;
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            text-align: center;
             justify-content: center;
     position: fixed;
 	top: 50%;
@@ -62,16 +63,23 @@ border-color: #fff;
   -webkit-transform: scale(1.1); 
   transform: scale(1.1);
 }
+
+.color2 {
+    font-size: 50px;
+}
+
+.color {
+    margin-top: 20px;
+}
 </style>
 
 <body>
     <div class="game-container">
-                      <h1 class="color">CHOOSE YOUR VERSION</h1>
-    <a class="c-button" href="https://eaglercraft-unblocked.neocities.org/152/">Play Eaglercraft 1.5.2</a>
-        <a class="c-button" href="https://client.eaglercraft.win/eagler-files/1.8/Main/index.html">Play EaglercraftX 1.8</a>
-          <a class="c-button" href="https://client.eaglercraft.win/eagler-files/wasm/1.8/Main/index.html">Play EaglercraftX 1.8 WASM-GC</a>
+                      <h1 class="color2">CHOOSE YOUR VERSION</h1>
+    <a class="c-button" onclick="alert('Be patient, it may take a minute for the game to load.')" href="game-eaglercraft152.html">Play Eaglercraft 1.5.2</a>
+        <a class="c-button" onclick="alert('EaglercraftX 1.8 is only available on Offline right now, we are sorry for the inconvenience and are working to make it available.')">Play EaglercraftX 1.8</a>
+          <a class="c-button" onclick="alert('EaglercraftX 1.8 WASM-GC is only available on Offline right now, we are sorry for the inconvenience and are working to make it available.')">Play EaglercraftX 1.8 WASM-GC</a>
                   <a class="color">Note: The WASM-GC version runs better on most devices.</a>
-                <a class="color">If these links are blocked, you can always download for offline.</a>
           </div>
     
 </body>

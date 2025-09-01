@@ -1,0 +1,486 @@
+<html>
+        <head>
+              <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chillytoonsy's educational games</title>
+      <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="">
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,800;1,800&display=swap');
+</style>
+<style>
+            body {
+            font-family: "Work Sans";
+            margin: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+            background-image: url('../images/ctugbg.gif');
+            background-position: center center;
+            background-size: cover;
+            height: 100vh;
+        }
+            header {
+            position: fixed;
+            left: 20%;
+            right: 20%;
+            text-align: center;
+            padding: 20px;
+            background-color: grey;
+            color: white;
+            padding-bottom: 13px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+
+        .topbaring {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+              margin-top: -8px;
+                justify-content: center;
+        }
+           .game-container {
+
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: px;
+            justify-content: center;
+        }
+        .game-card {
+            background-color: gray;
+            border: 6px solid #404040;
+            border-radius: 8px;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 0px;
+            width: 1200px;
+            text-align: center;
+        }
+        .game-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .game-card iframe {
+            width: 100%;
+            height: 678px; /* Adjust as needed */
+            border: none;
+            border-radius: 2px;
+        }
+.c-button:hover {
+    background-color: white;
+    color: black;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+
+
+.gameicon {
+  padding: 6px;
+  background-color: ;
+  color: white;
+  transition: transform .2s;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border-radius: 25px;
+  justify-content: center;
+
+}
+.gameicon:hover {
+    background-color: white;
+  -ms-transform: scale(1); /* IE 9 */
+  -webkit-transform: scale(1); /* Safari 3-8 */
+  transform: scale(1.1);  
+}
+
+
+.gameicon:hover .overlay {
+  opacity: 1;
+        top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.gameicon:hover .gamename {
+    color: black;
+}
+
+
+.gameicon:hover .image {
+  opacity: .5;
+}
+
+            .c-button2 {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 8px;
+  background: #666666;
+  color: #fff;
+  padding: 7px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+.c-button2:hover {
+    background-color: white;
+    color: black;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+            .c-button2selected {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 8px;
+  background: #9C9C9C;
+  color: #fff;
+  padding: 7px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+.c-button2selected:hover {
+    background-color: #9C9C9C;
+
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+            .c-button {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+  border-color: #fff;
+  border-radius: 8px;
+  background: #666666;
+  color: #fff;
+  padding: 2px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 0px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+            .newheader {
+            text-align: center;
+            padding: 6px;
+            background-color: #404040;
+            color: white;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+            .bottomheader {
+            text-align: center;
+            padding: -2px;
+            background-color: grey;
+            color: white;
+            padding-top: -3px;
+            padding-bottom: -3px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+                    .gameiconwithtext {
+            text-align: center;
+            background-color: grey;
+            color: white;
+            padding-top: -3px;
+            padding-bottom: -3px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+  transition: transform .2s;
+        }
+        .gameiconwithtext:hover {
+        padding: 5px;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+                    .topheader {
+            text-align: center;
+            padding: 20px;
+            background-color: grey;
+            color: white;
+            padding-bottom: 13px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+body::-webkit-scrollbar {
+        display: none;
+}
+  .frontpage {
+      	position: absolute;
+      	top: 100px;
+	left: 50%;
+	right: -30%;
+	height: 1vh;
+            flex-wrap: wrap;
+            gap: 10px;
+            text-align: center;
+            justify-content: center;
+	transform: translate(-50%, -50%);
+        }
+        .centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.usborder {
+      border-radius: 20px;
+}
+.game-tab {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 35px;
+    color: white;
+}
+
+.gamename {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.gametabname {
+    display: block;
+    justify-content: left;
+    text-align: center;
+    margin-top: 3px;
+}
+
+
+.imagehover {
+    border-radius: px;
+}
+            .c-button3 {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+border-color: #fff;
+  border-radius: 8px;
+  background: #666666;
+  color: #fff;
+  padding: 7px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+.hovertool {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.c-button3:hover {
+    background-color: white;
+    color: black;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+            .c-buttongame {
+  font-family: "Work Sans";
+  appearance: none;
+  border: 0;
+  display:;
+border-color: #fff;
+  border-radius: 8px;
+  background: #666666;
+  color: #fff;
+  padding: 7px 35px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform .2s;
+}
+           .gametab {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 48px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+        .c-buttongame:hover {
+    background-color: white;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+      -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1);
+}
+                .tools {
+            display: flex;
+            flex-wrap: wrap;
+                gap: 11px;
+            justify-content: center;
+              margin-top: -8px;
+                            margin-bottom: 8px;
+                justify-content: center;
+        }
+</style>
+    </head>
+
+<body>
+ 
+        <div class="frontpage">
+          <div class="gametab">
+     <div class="game-card">
+          <iframe id="gameframe" src="../storage/slope/index.html"> allowfullscreen></iframe>
+                      <div class="tools">
+                      <a id="fullscreenButton" class="c-buttongame">Play Fullscreen</a>
+                      <a id="changeversion" class="c-buttongame">Change Version</a>
+                      
+                      <script>
+document.getElementById('changeversion').onclick = function() {
+    var iframe = document.getElementById('gameframe');
+    iframe.src = '../storage/chooseyoureagler.html'; // Replace with the desired URL
+};
+</script>
+
+        <script>
+    const myIframe = document.getElementById('gameframe');
+    const fullscreenButton = document.getElementById('fullscreenButton');
+
+    fullscreenButton.addEventListener('click', () => {
+        if (document.fullscreenElement) {
+            // If already in fullscreen, exit fullscreen
+            document.exitFullscreen();
+        } else {
+            // If not in fullscreen, request fullscreen for the iframe
+            if (myIframe.requestFullscreen) {
+                myIframe.requestFullscreen();
+            } else if (myIframe.mozRequestFullScreen) { /* Firefox */
+                myIframe.mozRequestFullScreen();
+            } else if (myIframe.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                myIframe.webkitRequestFullscreen();
+            } else if (myIframe.msRequestFullscreen) { /* IE/Edge */
+                myIframe.msRequestFullscreen();
+            }
+        }
+    });
+    </script>
+            </div>
+            </div>
+            </div>
+         <div class="newheader">
+                                         <a class="game-tab">More Games</a>
+
+                            <div class="game-container">
+                    <div class="gameicon">
+                    <a href="ducklife-play.html" class=""><img src="https://chillytoonsysunblockedgames.github.io/icons/ducklife.png" class="usborder" width="125" height="125"></a> 
+                    <a class="gamename">Duck Life</a>
+                    </div>
+                    <div class="gameicon">
+                    <a href="driftboss-play.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/driftboss.png" class="usborder" width="125" height="125">
+                                        <a class="gamename">Drift Boss</a>
+                  </div>
+                    <div class="gameicon">
+                    <a href="fridaynightfunkin-play.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/fnf.png" class="usborder" width="125" height="125">
+                        <a class="gamename">Funkin'</a>
+                  </div>
+                    <div class="gameicon">
+                    <a href="basketrandom-play.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/basketrandom.png" class="usborder" width="125" height="125">
+                    <a class="gamename">Basket Random</a>
+                  </div>
+                    <div class="gameicon">
+                    <a href="slope-play.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/eaglercraft.png" class="usborder" width="125" height="125">
+                    <a class="gamename">Eaglercraft</a>
+                  </div>
+                    <div class="gameicon">
+                    <a href="comingsoon.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/boxingrandom.png"" class="usborder" width="125" height="125">
+                    <a class="gamename">Boxing Random</a>
+                  </div>
+                    <div class="gameicon">
+                    <a href="comingsoon.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/1v1lolctug.png" class="usborder" width="125" height="125">
+                    <a class="gamename">1v1.lol</a>
+                  </div>
+                    <div class="gameicon">
+                    <a href="comingsoon.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/volleyrandom.png" class="usborder" width="125" height="125">
+                    <a class="gamename">Volley Random</a>
+                  </div>
+                    <div class="gameicon">
+                    <a href="bloons-play.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/bloons.png" class="usborder" width="125" height="125">
+                    <a class="gamename">Bloons</a>
+                  </div>
+                    <div class="gameicon">
+                    <a href="comingsoon.html"><img src="https://chillytoonsysunblockedgames.github.io/icons/papaspizzeria.png" class="usborder" width="125" height="125">
+                    <a class="gamename">Papa's Pizzeria</a>
+                  </div>
+            </div>
+      </div>
+                      <div class="bottomheader">
+                <div class="hovertool">
+                <a href="../index.html" class="c-button3">About</a>
+                <a href="../index.html" class="c-button3">Update Log</a>
+                <a href="../index.html" class="c-button3">Mirror Links</a>
+                <a href="../index.html" class="c-button3">DMCA</a>
+                </div>
+            </div>
+    </div>
+      
+    <header>
+
+            <div class="topbaring">
+        <a href="../index.html" class="c-button">Home</a>
+        <a href="../allgames.html" class="c-button">All Games</a>
+        <a href="../ncbf.html" class="c-button">NCBF Report</a>
+        <a href="../index.html" class="c-button">Settings</a>
+        </div>
+        </header>
+        
+  
+        
+        <script>
+            const changingTexts = [
+                "Welcome!",
+                "So many frickin games, it's hard to choose!",
+                "Free Unblocked Games for Everyone!",
+                "Join our Discord!",
+                "We have a wide range of Unblocked Games! Hope you enjoy.",
+                "Get started by clicking the All Games button on the top.",
+                "Reload this page and it will show a different message every time >:)",
+                "Check the CTUG Github repo for new versions of CTUG if available."
+            ];
+
+            const randomIndex = Math.floor(Math.random() * changingTexts.length);
+            const selectedText = changingTexts[randomIndex];
+
+            document.getElementById("dynamic-text").textContent = selectedText;
+        </script>
+</body>
+</html>
+
+        
